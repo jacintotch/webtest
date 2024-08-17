@@ -1,0 +1,270 @@
+
+.hero1 {
+    background-image: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.hero1 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero1 p {
+    font-size: 3.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+.courses, .testimonials, .schedule, .registration {
+    padding: 50px 20px;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courses h2, .testimonials h2, .schedule h2, .registration h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.course-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 15px;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+    max-width: 100%;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.course-card button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.course-card button:hover {
+    background-color: #2980b9;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.schedule th, .schedule td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #ecf0f1;
+}
+
+.schedule th {
+    background-color: #3498db;
+    color: white;
+}
+
+.schedule button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.registration button{
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.schedule button:hover {
+    background-color: #88534e;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .hero-content1 h1 {
+        font-size: 40px;
+    }
+
+    .hero-content1 p {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        font-size: 18px;
+    }
+
+    .course-grid, .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card, .testimonial {
+        padding: 15px;
+    }
+
+    .schedule th, .schedule td {
+        font-size: 16px;
+    }
+
+    .registration form {
+        padding: 15px;
+    }
+}
+
+/* Phone view (up to 767px) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    header .logo {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .hero1 {
+        padding: 60px 15px;
+    }
+
+    .hero-content1 h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content1 p {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .course-card {
+        padding: 15px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .testimonial {
+        text-align: center;
+        width: 80%;
+        
+    }
+    .testimonial p{
+        width: 70%;
+        text-align: center;
+    }
+    .testimonials{
+        display: inline;
+    }
+    .schedule table, .schedule th, .schedule td {
+        font-size: 14px;
+    }
+
+    .registration form {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 8px 0;
+    }
+}

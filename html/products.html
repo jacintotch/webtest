@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Anoldito Engineers and Fire Services</title>
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="menu-toggle">
+
+        <div class="logo">
+             <p>Anoldito Engineers and Fire Services</p>
+         </div>
+ 
+         <nav>
+             <ul>
+                 <li><a href="../html/home.html">Home</a></li>
+                 <li><a href="../html/products.html">Products</a></li>
+                 <li><a href="../html/services.html">Services</a></li>
+                 <li><a href="../html/training.html">Training</a></li>
+                 <li><a href="../html/contact Us.html">Contact Us</a></li>
+             </ul>
+         </nav>
+     </header>
+ 
+     <section id="hero1">
+         <div class="hero-content">
+             <h1 class="fade-in">Protecting Lives, One Flame at a Time</h1>
+             <p class="slide-up">Your trusted partner in fire safety and emergency training.</p>
+             <a href="#products" class="btn pulse">Explore</a>
+         </div>
+     </section>
+
+    <!-- Search Bar -->
+    <section id="search-section">
+        <input type="text" id="search-bar" placeholder="Search for products..." oninput="filterProducts()">
+    </section>
+
+    <!-- Products Section -->
+    <section id="products-section">
+        <h2>Our Products</h2>
+
+        <div class="product-grid">
+            <!-- Example Product 1 -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="../media/IMAGES/produc2.jpeg" alt="Fire Extinguisher">
+                </div>
+                <div class="product-details">
+                    <h3>Fire Extinguisher</h3>
+                    <p class="product-description">Reliable fire extinguishers for every type of fire risk.</p>
+                    <p class="product-price">$49.99</p>
+                    <div class="product-rating">
+                        <span>⭐⭐⭐⭐☆</span>
+                        <span>(124 Reviews)</span>
+                    </div>
+                    <button class="product-button" onclick="addToCart('fire-extinguisher')">Add to Cart</button>
+                    <button class="product-details-button" onclick="showProductDetails('fire-extinguisher')">View Details</button>
+                </div>
+                <div class="product-details">
+                    <h3>Fire Extinguisher</h3>
+                    <p class="product-description">Reliable fire extinguishers for every type of fire risk.</p>
+                    <p class="product-price">$49.99</p>
+                    <div class="product-rating">
+                        <span>⭐⭐⭐⭐☆</span>
+                        <span>(124 Reviews)</span>
+                    </div>
+                    <button class="product-button" onclick="addToCart('fire-extinguisher')">Add to Cart</button>
+                    <button class="product-details-button" onclick="showProductDetails('fire-extinguisher')">View Details</button>
+                </div>
+            </div>
+
+            <!-- Example Product 2 -->
+            <div class="product">
+                <div class="product-image">
+                    <img src="../media/IMAGES/fire_alarm.jpg" alt="Fire Alarm System">
+                </div>
+                <div class="product-details">
+                    <h3>Fire Alarm System</h3>
+                    <p class="product-description">Stay alert with our advanced fire alarm systems.</p>
+                    <p class="product-price">$89.99</p>
+                    <div class="product-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <span>(256 Reviews)</span>
+                    </div>
+                    <button class="product-button" onclick="addToCart('fire-alarm')">Add to Cart</button>
+                    <button class="product-details-button" onclick="showProductDetails('fire-alarm')">View Details</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="../media/IMAGES/fire_alarm.jpg" alt="Fire Alarm System">
+                </div>
+                <div class="product-details">
+                    <h3>Fire Alarm System</h3>
+                    <p class="product-description">Stay alert with our advanced fire alarm systems.</p>
+                    <p class="product-price">$89.99</p>
+                    <div class="product-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <span>(256 Reviews)</span>
+                    </div>
+                    <button class="product-button" onclick="addToCart('fire-alarm')">Add to Cart</button>
+                    <button class="product-details-button" onclick="showProductDetails('fire-alarm')">View Details</button>
+                </div>
+            </div>
+            
+            <!-- Add more products here -->
+            <!-- Example Product 3 to 10 -->
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination">
+            <button class="pagination-button" onclick="previousPage()">Previous</button>
+            <button class="pagination-button" onclick="nextPage()">Next</button>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Anoldito Engineers and Fire Services and 
+            Training Namibia cc</p>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="../js/products.js"></script>
+</body>
+</html>

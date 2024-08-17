@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anoldito Training Programs</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Corrected -->
+    <link rel="stylesheet" href="../css/training.css"> <!-- Corrected -->
+</head>
+<body>
+    <header id="menu-toggle">
+        <div class="logo">
+            <p>Anoldito Engineers and Fire Services</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li><a href="../html/services.html">Services</a></li>
+                <li><a href="../html/training.html">Training</a></li>
+                <li><a href="../html/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero1">
+        <div class="hero-content1">
+            <h1>Empower Your Team with Professional Training</h1>
+            <p>Our courses are designed to equip you with the skills needed to ensure safety and compliance.</p>
+            <button class="cta-button" onclick="window.location.href='#schedule'">Explore Courses</button>
+        </div>
+    </section>
+
+    <!-- Course Details -->
+    <section class="courses">
+        <h2>Our Training Programs</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <img src="fire-safety.jpg" alt="Fire Safety Training">
+                <h3>Fire Safety Training</h3>
+                <p>Master essential fire safety protocols to protect your workplace.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="course-card">
+                <img src="first-aid.jpg" alt="First Aid Training">
+                <h3>First Aid Training</h3>
+                <p>Equip yourself with life-saving first aid skills for emergencies.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Trainees Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"The training was comprehensive and well-delivered."</p>
+                <h4>— John Doe, SafeCorp</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Excellent hands-on approach. I learned a lot!"</p>
+                <h4>— Jane Smith, HealthPlus</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Schedule -->
+    <section class="schedule" id="schedule">
+        <h2>Upcoming Training Schedule</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Register</th>
+            </tr>
+            <tr>
+                <td>Fire Safety Training</td>
+                <td>September 15, 2024</td>
+                <td>Windhoek, Namibia</td>
+                <td><button onclick="window.location.href='#course'">Register</button></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration">
+        <h2>Register for a Training Program</h2>
+        <form action="#" method="post">
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Anoldito Engineers and Fire Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
