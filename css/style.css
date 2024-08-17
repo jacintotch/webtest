@@ -462,3 +462,18 @@ footer nav ul li a:hover {
         padding: 10px 0;
     }   
 }
+
+/* Hide the "Menu" label on larger screens */
+@media (min-width: 769px) {
+    .menu-label {
+        display: none;
+    }
+}
+
+/* Show the "Menu" label on smaller screens */
+@media (max-width: 768px) {
+    .menu-label {
+        display: inline-block; /* or flex, block, depending on your layout */
+    }
+}
+
