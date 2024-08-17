@@ -210,6 +210,15 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
  <!-- Custom JS -->
  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('#nav-menu');
+
+        menuToggle.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+        });
+    });
+
      $(document).ready(function(){
          $('.carousel').slick({
              slidesToShow: 3,
