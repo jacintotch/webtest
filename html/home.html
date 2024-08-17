@@ -73,10 +73,17 @@
        <div class="logo">
             <p>Anoldito Engineers and Fire Services</p>
         </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div>
+                <ul>
+                    <li>MENU</li>
+                </ul>
+            </div>
 
-        <nav>
+        </div>
+        <nav id="nav-menu">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="../html/home.html">Home</a></li>
                 <li><a href="../html/products.html">Products</a></li>
                 <li><a href="../html/services.html">Services</a></li>
                 <li><a href="../html/training.html">Training</a></li>
@@ -206,6 +213,16 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
  <!-- Custom JS -->
  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('#nav-menu');
+
+        menuToggle.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+        });
+    });
+
      $(document).ready(function(){
          $('.carousel').slick({
              slidesToShow: 3,
