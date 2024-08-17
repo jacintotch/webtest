@@ -434,47 +434,31 @@ footer nav ul li a:hover {
         position: absolute;
         top: 60px; /* Adjust based on header height */
         right: 0;
-<<<<<<< HEAD
-        background-color: #1f1212d5;
-        width: 35%;
+        background-color: rgba(31, 18, 18, 0.83); /* Slightly transparent background */
+        width: 35%; /* Adjusted width to make the menu smaller */
         text-align: right;
         padding: 15px;
         box-shadow: 0 2px 5px rgba(253, 77, 77, 0.1);
-        transition: background-color 0.3s, color 0.3s;
-=======
-        background-color: #0e0808;
-        width: 100%;
-        padding: 15px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
->>>>>>> 78b880be06768cbfe20cfa13fb7ad793e889f145
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
     }
-
+    
     #nav-menu.active {
-        display: flex;
+        display: flex; /* Display the menu when active */
     }
-
+    
     #nav-menu ul {
         display: flex;
         flex-direction: column;
         gap: 15px;
-<<<<<<< HEAD
         text-align: right;
-        text-decoration: none;
-        list-style: none;    }
-=======
-        text-align: center;
+        list-style: none; /* Remove bullet points from list */
     }
->>>>>>> 78b880be06768cbfe20cfa13fb7ad793e889f145
-
+    
     #nav-menu a {
         display: block;
         color: #fff;
         text-decoration: none;
         font-weight: bold;
         padding: 10px 0;
-    }
-<<<<<<< HEAD
+    }   
 }
-=======
-}
->>>>>>> 78b880be06768cbfe20cfa13fb7ad793e889f145
