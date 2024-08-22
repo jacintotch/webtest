@@ -186,7 +186,11 @@ nav a:hover::after {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-
+.testimonial1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 .testimonial {
     background: white;
     padding: 20px;
