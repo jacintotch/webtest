@@ -1,6 +1,6 @@
 /* Reset some default browser styles */
 * {
-    margin: 0;
+    margin: 0.1%;
     padding: 0;
     box-sizing: border-box;
 }
@@ -34,9 +34,9 @@ h2::after {
 
 /* Header */
 header {
-    background-color: #0e0808;
+    background-color: #bebebe;
     color: white;
-    padding: 15px 0;
+    padding: 12px 0;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -46,19 +46,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
 }
 
-header .logo {
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    color: #ff8902;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    border: 2px solid #fa432a;
+header .logo{
+    width: 250px;
+    height: 50px;
+    margin: 10%;
+    border: 2px solid #ffa909;
+    cursor: pointer;
 }
-
-header .logo h1 {
+header .logo img {
     font-size: 2rem;
     color: #00d084;
 }
@@ -70,7 +68,7 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: #031947;
     text-decoration: none;
     font-weight: bold;
     position: relative;
@@ -430,6 +428,10 @@ footer nav ul li a:hover {
 
     .hamburger {
         display: flex;
+        color: black;
+    }
+    .hamburger #menu-label{
+        margin-right: 1%;
     }
 
     #nav-menu {
@@ -460,7 +462,7 @@ footer nav ul li a:hover {
     
     #nav-menu a {
         display: block;
-        color: #fff;
+        color: #ffffff;
         text-decoration: none;
         font-weight: bold;
         padding: 10px 0;
@@ -480,4 +482,3 @@ footer nav ul li a:hover {
         display: inline-block; /* or flex, block, depending on your layout */
     }
 }
-
