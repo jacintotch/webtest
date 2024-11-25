@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anoldito Engineers and Fire Services</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Swiper Js CDN Link ( Link in Description ) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <style>
+        /* Additional Carousel Styles */
+        .carousel {
+            position: relative;
+        }
+
+        .slick-prev,
+        .slick-next {
+            font-size: 0em;
+            color: #ff1e00;
+            z-index: 1;
+        }
+
+        .slick-prev {
+            left: 10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        .slick-slide {
+            transition: transform 0.5s ease;
+        }
+
+        .slick-slide img {
+            max-width: 150%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .slick-dots {
+            bottom: -30px;
+        }
+
+        .slick-dots li button:before {
+            color: #ff0000;
+        }
+
+        .slick-slide {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        .slick-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .slick-prev,
+        .slick-next {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 50%;
+            padding: 8px;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eeeeee;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            max-width: 150px;
+        }
+/* Default style for the nav menu */
+#nav-menu {
+    display: flex;
+}
+
+#nav-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    /* Initially hide the nav links */
+    nav {
+        display: none;
+    }
+
+    /* Show the hamburger icon */
+    .hamburger {
+        display: flex;
+        color: black;
+        font-size: 26px;
+        cursor: pointer;
+    }
+    
+    .hamburger #menu-label {
+        margin-right: 1%;
+    }
+
+    /* Style for the nav menu in mobile view */
+    #nav-menu {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        background-color: rgba(31, 18, 18, 0.83); /* Slightly transparent background */
+        width: 35%; /* Adjusted width */
+        text-align: right;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(253, 77, 77, 0.1);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Active state: when menu is open */
+    #nav-menu.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    /* Style for the list items inside the nav menu */
+    #nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: right;
+        list-style: none; /* Remove bullet points */
+    }
+
+    #nav-menu a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+
+    /* Show the menu label only on mobile screens */
+    .menu-label {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 769px) {
+    /* Hide the hamburger menu and label on larger screens */
+    .hamburger {
+        display: none;
+    }
+
+    .menu-label {
+        display: none;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- -------- Navbar Section -------- -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navlinks" id="nav-menu">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../Html/product.html">Products</a></li>
+            <li><a href="../html/services.html">Services</a></li>
+            <li><a href="../html/training.html">Training</a></li>
+            <li><a href="../html/about.html">About us</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- -------- Home Section -------- -->
+    <section class="home_section" id="home">
+        <div class="home_container">
+            <h3 class="heading">Save on All<br><span>Services and Products!</span></h3>
+            <p class="home_para1">We provide top-tier fire safety solutions and training programs tailored to businesses, organizations, and individuals. Our products and services are reliable, efficient, and designed to safeguard lives and property. From fire extinguishers and sprinkler systems to comprehensive first aid and fire safety training, we deliver excellence in every aspect of fire protection.</p>
+            <p class="home_para2">Our mission is to be the trusted partner for fire safety in Southern Africa. With our unwavering commitment to quality, innovation, and accessibility, we aim to empower our clients to protect what matters most while fostering a safer environment for all.</p>
+            <a href="#products" class="home_btn btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- -------- Poster Section -------- -->
+    <section class="poster">
+        <h3 class="poster_heading head_text">Why Choose Anoldito Engineers & Fire Services?</h3>
+        <div class="poster_wrapper">
+            <div class="poster_card">
+                <img src="../img/shield-solid.svg" class="icon" alt="Trusted Expertise">
+                <h4>Trusted Expertise</h4>
+                <p>With years of experience in fire safety, we deliver solutions you can rely on.</p>
+            </div>
+            <div class="poster_card">
+                <img src="../img/ranking-star-solid.svg" class="icon" alt="Top Quality Products">
+                <h4>Top-Quality Products</h4>
+                <p>Our fire protection products are durable, effective, and built to last.</p>
+            </div>
+            <div class="poster_card">
+                <img src="../img/list-check-solid.svg" class="icon" alt="Comprehensive Training">
+                <h4>Comprehensive Training</h4>
+                <p>Equip your team with life-saving skills through our certified training programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------- New Arrival Section -------- -->
+    <section class="new_arrival">
+        <div class="arrival_container">
+            <h3 class="heading">#NewArrivals</h3>
+            <p>Discover our latest fire safety products and solutions! From advanced fire extinguishers to state-of-the-art sprinkler systems, our new arrivals are designed to keep you and your property safe. Upgrade your safety gear today with our innovative, reliable, and affordable products.</p>
+            <a href="#products" class="btn arrival_btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- -------- Our Products Section -------- -->
+    <section class="our_products" id="products">
+        <h3 class="product_heading head_text">Our <span>Products</span></h3>
+        <div class="products_container">
+            <!-- Product cards go here -->
+        </div>
+        <a href="./product.html" class="view_allButton btn">View All</a>
+    </section>
+
+    <!-- -------- Subscribe Letter Section -------- -->
+    <section class="subscribe_letter">
+        <h3 class="sub_heading head_text">Training Programs</h3>
+        <p>We offer a range of professional training courses to help you and your team stay safe and prepared!</p>
+        <a href="/Html/treining.html" class="btn sub_btn">Join a Training Session</a>
+    </section>
+
+    <!-- -------- Testimonials Section -------- -->
+    <section class="testimonials" id="Testimonial">
+        <h3 class="test_heading head_text">Customer's Testimonial</h3>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Testimonials go here -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- -------- Our Clients Section -------- -->
+    <section id="clients" class="dashboard-section">
+        <h2 class="test_heading head_text"><i class="fas fa-handshake"></i> Our Clients</h2>
+        <div class="carousel">
+            <!-- Client logos go here -->
+        </div>
+    </section>
+
+    <!-- -------- Footer Section -------- -->
+    <section class="footer">
+        <p class="footer_para">2024 <i class="far fa-copyright"></i> Anoldito Engineers and Fire Services All Rights Reserved</p>
+    </section>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('#nav-menu');
+
+    // Toggle the visibility of the menu when the hamburger icon is clicked
+    hamburger.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+    });
+});
+
+    </script>
+
+    <!-- Include JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

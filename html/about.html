@@ -2,36 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Anoldito Engineers & Fire Services</title>
+    <title>About Us</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <div>
-             <img src="../media/logo.png" alt="" class="logo">
-         </div>
-         <div class="hamburger" onclick="toggleMenu()">
-             <div class="menu-label">MENU</div>
-         </div>
-         <nav id="nav-menu">
-             <ul>
-                <li><a href="../html/home.html">Home</a></li>
-                <li><a href="../html/products.html">Products</a></li>
-                <li><a href="../html/services.html">Services</a></li>
-                <li><a href="../html/training.html">Training</a></li>
-                <li><a href="../html/about.html">About us</a></li>
-                <li><a href="../html/contact.html">Contact</a></li>
-             </ul>
-         </nav>
-     </header>
+    <!-- -------- Navbar Section -------- -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo Image" width="245px">
+        </div>
+        <ul class="navlinks">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/products.html">Services</a></li>
+            <li><a href="../html/services.html">Services</a></li>
+            <li><a href="../html/training.html">Training</a></li>
+            <li><a href="../html/about.html">About us</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li><ion-icon name="cart"></ion-icon></li>
+            <li><ion-icon name="search"></ion-icon></li>
+        </ul>
+    </div>
+
  
     <section id="hero2">
         <div class="hero-content">
             <h1 class="fade-in">Protecting Lives, One Flame at a Time</h1>
             <p class="slide-up">Your trusted partner in fire safety and emergency training.</p>
-            <a href="#products" class="btn pulse">know more</a>
+            <a href="#about" class="btn pulse">know more</a>
         </div>
     </section>
 
@@ -144,9 +144,38 @@
         <!-- Add more products as needed -->
     </div>
 
-    <footer>
-        <p>&copy; 2024 Anoldito Engineers & Fire Services. All rights reserved.</p>
-    </footer>
+ <!-- -------- Footer Section -------- -->
+ <section class="footer">
+    <div class="footer_container">
+        <div class=" col col_1">
+            <img src="../img/logo.png" width="250px">
+            <p><span>ADDRESS : </span>28 White Tower, Jaipur, Rajasthan</p>
+            <p><span>TELEPHONE : </span>+91 987654321</p>
+            <p><span>EMAIL : </span>CrownCoder@gmail.com</p>
+        </div>
+        <div class="col col_2">
+            <h4 class="heading">MENU</h4>
+            <P>Home</P>
+            <P>About</P>
+            <P>Services</P>
+            <P>Testimonials</P>
+            <P>Blog</P>
+            <P>Contact</P>
+        </div>
+        <div class="col col_3">
+            <h4 class="heading">ACCOUNT</h4>
+            <P>Account</P>
+            <P>Checkout</P>
+            <P>Login</P>
+            <P>Register</P>
+            <P>Shopping</P>
+            <P>Widget</P>
+        </div>
+    </div>
+    <div class="footer_tagline">
+        <p class="tagline">Copyright &#xa9; 2023 Crown Coder, All Rights Reserved | This Website is Made with love and Affection.</p>
+    </div>
+</section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Slick Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

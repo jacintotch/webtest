@@ -2,158 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anoldito Training Programs</title>
-    <link rel="stylesheet" href="../css/style.css"> 
-    <link rel="stylesheet" href="../css/training.css"> 
+    <title>Anoldito Engineers and Fire Services</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/training.css">
+
+    <!-- Swiper Js CDN Link ( Link in Description ) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 </head>
+
 <body>
-    <header>
-        <div>
-             <img src="../media/logo.png" alt="" class="logo">
-         </div>
-         <div class="hamburger" onclick="toggleMenu()">
-             <div class="menu-label">MENU</div>
-         </div>
-         <nav id="nav-menu">
-             <ul>
-                <li><a href="../html/home.html">Home</a></li>
-                <li><a href="../html/products.html">Products</a></li>
-                <li><a href="../html/services.html">Services</a></li>
-                <li><a href="../html/training.html">Training</a></li>
-                <li><a href="../html/about.html">About us</a></li>
-                <li><a href="../html/contact.html">Contact</a></li>
-             </ul>
-         </nav>
-     </header>
+
+    <!-- -------- Navbar Section -------- -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo Image" width="250px">
+        </div>
+        <ul class="navlinks">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../Html/product.html">Products</a></li>
+            <li><a href="../html/services.html">Services</a></li>
+            <li><a href="../html/training.html">Training</a></li>
+            <li><a href="../html/about.html">About us</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+  <!-- Hero Section -->
+  <section class="hero1">
+    <div class="hero-content1">
+        <h1>Empower Your Team with Professional Training</h1>
+        <p>Our courses are designed to equip you with the skills needed to ensure safety and compliance.</p>
+        <button class="cta-button" onclick="window.location.href='#schedule'">Explore Courses</button>
+    </div>
+</section>
+
+<!-- Course Details -->
+<section class="courses">
+    <h2>Our Training Programs</h2>
+    <div class="course-grid">
+        <div class="course-card">
+            <img src="fire-safety.jpg" alt="Fire Safety Training">
+            <h3>Fire Safety Training</h3>
+            <p>Master essential fire safety protocols to protect your workplace.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="course-card">
+            <img src="first-aid.jpg" alt="First Aid Training">
+            <h3>First Aid Training</h3>
+            <p>Equip yourself with life-saving first aid skills for emergencies.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <h2>What Our Trainees Say</h2>
+    <div class="testimonial-grid">
+        <div class="testimonial">
+            <p>"The training was comprehensive and well-delivered."</p>
+            <h4>— John Doe, SafeCorp</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Excellent hands-on approach. I learned a lot!"</p>
+            <h4>— Jane Smith, HealthPlus</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Training Schedule -->
+<section class="schedule" id="schedule">
+    <h2>Upcoming Training Schedule</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Register</th>
+        </tr>
+        <tr>
+            <td>Fire Safety Training</td>
+            <td>September 15, 2024</td>
+            <td>Windhoek, Namibia</td>
+            <td><button onclick="window.location.href='#course'">Register</button></td>
+        </tr>
+    </table>
+</section>
+
+<!-- Registration Form -->
+<section class="registration">
+    <h2>Register for a Training Program</h2>
+    <form action="#" method="post">
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+    <section class="footer">
+        <div class="footer_container">
+            <div class=" col col_1">
+                <img src="../img/logo.png" width="250px">
+                <p><span>ADDRESS : </span>Erf 5529, Elyambala Street, Ongwediva, Namibia</p>
+                <p><span>TELEPHONE : </span>+264 81 243277 / +264 85 7733355</p>
+                <p><span>EMAIL : </span>anolditofireengineer@gmail.com</p>
+            </div>
+            <div class="col col_2">
+                <h4 class="heading">MENU</h4>
+                <P>Home</P>
+                <P>About</P>
+                <P>Services</P>
+                <P>Testimonials</P>
+                <P>Blog</P>
+                <P>Contact</P>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61551619123411" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/anolditoengineers/profilecard/?igsh=cWlkd3lsbnJxYXk4" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/0812949374" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
  
-
-    <!-- Hero Section -->
-    <section class="hero1">
-        <div class="hero-content1">
-            <h1>Empower Your Team with Professional Training</h1>
-            <p>Our courses are designed to equip you with the skills needed to ensure safety and compliance.</p>
-            <button class="cta-button" onclick="window.location.href='#schedule'">Explore Courses</button>
+        </div>
+        <div class="footer_tagline">
+            <p class="tagline"> © 2024 Anoldito Engineers and Fire Services and Training Namibia cc </p>
         </div>
     </section>
 
-    <!-- Course Details -->
-    <section class="courses">
-        <h2>Our Training Programs</h2>
-        <div class="course-grid">
-            <div class="course-card">
-                <img src="fire-safety.jpg" alt="Fire Safety Training">
-                <h3>Fire Safety Training</h3>
-                <p>Master essential fire safety protocols to protect your workplace.</p>
-                <button>Learn More</button>
-            </div>
-            <div class="course-card">
-                <img src="first-aid.jpg" alt="First Aid Training">
-                <h3>First Aid Training</h3>
-                <p>Equip yourself with life-saving first aid skills for emergencies.</p>
-                <button>Learn More</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <h2>What Our Trainees Say</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial">
-                <p>"The training was comprehensive and well-delivered."</p>
-                <h4>— John Doe, SafeCorp</h4>
-            </div>
-            <div class="testimonial">
-                <p>"Excellent hands-on approach. I learned a lot!"</p>
-                <h4>— Jane Smith, HealthPlus</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- Training Schedule -->
-    <section class="schedule" id="schedule">
-        <h2>Upcoming Training Schedule</h2>
-        <table>
-            <tr>
-                <th>Course</th>
-                <th>Date</th>
-                <th>Location</th>
-                <th>Register</th>
-            </tr>
-            <tr>
-                <td>Fire Safety Training</td>
-                <td>September 15, 2024</td>
-                <td>Windhoek, Namibia</td>
-                <td><button onclick="window.location.href='#course'">Register</button></td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- Registration Form -->
-    <section class="registration">
-        <h2>Register for a Training Program</h2>
-        <form action="#" method="post">
-            <label for="course">Course:</label>
-            <input type="text" id="course" name="course" required>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Anoldito Engineers and Fire Services. All rights reserved.</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <!-- Slick Carousel JS -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
- <!-- Custom JS -->
- <script>
-    
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuToggle = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('#nav-menu');
-
-        menuToggle.addEventListener('click', function () {
-            navMenu.classList.toggle('active');
-        });
-    });
-
-     $(document).ready(function(){
-         $('.carousel').slick({
-             slidesToShow: 3,
-             slidesToScroll: 1,
-             autoplay: true,
-             autoplaySpeed: 3000, // Transition every 3 seconds
-             arrows: true,
-             dots: true, // Optional: add navigation dots
-             responsive: [
-                 {
-                     breakpoint: 768,
-                     settings: {
-                         slidesToShow: 2
-                     }
-                 },
-                 {
-                     breakpoint: 480,
-                     settings: {
-                         slidesToShow: 1
-                     }
-                 }
-             ]
-         });
-     });
- </script>
 </body>
-
 </html>

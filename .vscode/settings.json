@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.root": "/public",       // Set root folder for Live Server
+    "liveServer.settings.ignoreFiles": ["*.scss"], // Ignore certain files
+    "liveServer.settings.wait": 500,             // Wait time before reloading (in ms)
+    "liveServer.settings.host": "127.0.0.1"      // Set a specific host
+}
